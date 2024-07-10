@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <script src="index.js"></script>
+  <title>キャラクターシートメーカー</title>
+</head>
+<body>
+  <div class="center">
+    <img src="./image/GRjwWj5WkAABSGG.jpg" alt="背景画像" class="background">
+    <form>
+        <!--入力項目-->
+        <input type="text" name="creater" id="creater" class="overlap"><!--描いた人-->
+
+        <input type="text" name="name" id="name" placeholder="名前" class="overlap"><!--名前-->
+        <input type="text" name="birthday" id="birthday" placeholder="誕生日" class="overlap"><!--誕生日-->
+        <input type="number" name="age" id="age" placeholder="年齢" class="overlap"><!--年齢-->
+        <input type="text" name="gender" id="gender" placeholder="性別" class="overlap"><!--性別-->
+        <input type="text" name="birthplace" id="birthplace" placeholder="出身" class="overlap"><!--出身-->
+        <input type="text" name="tribe" id="tribe" placeholder="種族" class="overlap"><!--種族-->
+        <input type="text" name="height" id="height" placeholder="身長" class="overlap"><!--身長-->
+        <input type="text" name="weight" id="weight" placeholder="体重" class="overlap"><!--体重-->
+        <input type="text" name="haircolor" id="haircolor" placeholder="髪色" class="overlap"><!--髪色-->
+        <input type="text" name="eyecolor" id="eyecolor" placeholder="眼の色" class="overlap"><!--眼の色-->
+        <input type="text" name="firstperson" id="firstperson" placeholder="一人称" class="overlap"><!--一人称-->
+        <input type="text" name="secondperson" id="secondperson" placeholder="二人称" class="overlap"><!--二人称-->
+        <input type="text" name="character" id="character" placeholder="性格" class="overlap"><!--性格-->
+        <input type="text" name="tone" id="tone" placeholder="口調" class="overlap"><!--口調-->
+        <input type="text" name="skill" id="skill" placeholder="能力" class="overlap"><!--能力-->
+        <input type="text" name="hobby" id="hobby" placeholder="趣味・特技" class="overlap"><!--趣味・特技-->
+        <input type="text" name="favorit" id="favorit" placeholder="好きなもの" class="overlap"><!--好きなもの-->
+        <input type="text" name="dislikes" id="dislikes" placeholder="嫌いなもの" class="overlap"><!--嫌いなもの-->
+        <input type="text" name="close" id="close" placeholder="仲の良い人" class="overlap"><!--仲の良い人-->
+        <input type="text" name="loggerheads" id="loggerheads" placeholder="仲の悪い人" class="overlap"><!--仲の悪い人-->
+        <input type="text" name="familystructure" id="familystructure" placeholder="家族構成" class="overlap"><!--家族構成-->
+        <textarea name="ohter" id="ohter" placeholder="その他情報" class="overlap"></textarea><!--その他情報-->
+
+        <!--画像-->
+        <div class="drop-zone overlap" id="smile">画像を選択</div>
+        <div class="drop-zone overlap" id="anger">画像を選択</div>
+        <div class="drop-zone overlap" id="sad">画像を選択</div>
+        <div class="drop-zone overlap" id="happy">画像を選択</div>
+        <div class="drop-zone overlap" id="full">画像を選択</div>
+        <input type="file" id="file-input" accept="image/*" style="display: none;">
+    </form>
+</div>
+</body>
+</html>

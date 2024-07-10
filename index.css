@@ -1,0 +1,257 @@
+/*共通設定*/
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.center {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.background {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlap {
+  position: absolute;
+  top: 50%; /* 画像内の位置に合わせて調整 */
+  left: 50%; /* 画像内の位置に合わせて調整 */
+  transform: translate(-50%, -50%);
+  width: 80%; /* 入力フィールドの幅を調整 */
+  max-width: 300px;
+}
+
+input[type="text"], input[type="number"]{
+  font-size: 10px;
+}
+
+input, textarea{
+  background-color: blanchedalmond;
+}
+
+/*各項目設定*/
+#creater{
+  top: 8.5%;
+  left: 87%;
+  height: 1.8%;
+  width: 19%;
+}
+
+#name{
+  top: 12.6%;
+  left: 31%;
+  height: 2%;
+  width: 53.5%;
+}
+
+#birthday{
+  top: 16.5%;
+  left: 31%;
+  height: 2%;
+  width: 53.5%;
+}
+
+#age{
+  top: 20.5%;
+  left: 16.8%;
+  height: 1.8%;
+  width: 25%;
+}
+
+#gender{
+  top: 20.5%;
+  left: 45.3%;
+  height: 1.8%;
+  width: 25%;
+}
+
+#birthplace{
+  top: 24.4%;
+  left: 16.8%;
+  height: 1.8%;
+  width: 25%;
+}
+
+#tribe{
+  top: 24.4%;
+  left: 45.3%;
+  height: 1.8%;
+  width: 25%;
+}
+
+#height{
+  top: 28.3%;
+  left: 16.8%;
+  height: 1.8%;
+  width: 25%;
+}
+
+#weight{
+  top: 28.3%;
+  left: 45.3%;
+  height: 1.8%;
+  width: 25%;
+}
+
+#haircolor{
+  top: 32.3%;
+  left: 16.8%;
+  height: 1.8%;
+  width: 25%;
+}
+
+#eyecolor{
+  top: 32.3%;
+  left: 45.3%;
+  height: 1.8%;
+  width: 25%;
+}
+
+#firstperson{
+  top: 36.3%;
+  left: 16.8%;
+  height: 1.8%;
+  width: 25%;
+}
+
+#secondperson{
+  top: 36.3%;
+  left: 45.3%;
+  height: 1.8%;
+  width: 25%;
+}
+
+#character{
+  top: 40.3%;
+  left: 16.8%;
+  height: 1.8%;
+  width: 25%;
+}
+
+#tone{
+  top: 40.3%;
+  left: 45.3%;
+  height: 1.8%;
+  width: 25%;
+}
+
+#skill{
+  top: 44.2%;
+  left: 31%;
+  height: 2%;
+  width: 53.5%;
+}
+
+#hobby{
+  top: 48.2%;
+  left: 31%;
+  height: 2%;
+  width: 53.5%;
+}
+
+#favorit{
+  top: 52.2%;
+  left: 31%;
+  height: 2%;
+  width: 53.5%;
+}
+
+#dislikes{
+  top: 56.2%;
+  left: 31%;
+  height: 2%;
+  width: 53.5%;
+}
+
+#close{
+  top: 60.2%;
+  left: 31%;
+  height: 2%;
+  width: 53.5%;
+}
+
+#loggerheads{
+  top: 64.2%;
+  left: 31%;
+  height: 2%;
+  width: 53.5%;
+}
+
+#familystructure{
+  top: 68.1%;
+  left: 31%;
+  height: 2%;
+  width: 53.5%;
+}
+
+#ohter{
+  top: 83.5%;
+  left: 31%;
+  height: 25%;
+  width: 53.5%;
+}
+
+/*画像配置スタイル*/
+.drop-zone {
+  width: 300px;
+  height: 200px;
+  border: 2px dashed #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 20px auto;
+  background-color: blanchedalmond;
+}
+.drop-zone img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/*各表情*/
+#smile{
+  top: 13.5%;
+  left: 69.5%;
+  width: 70px;
+  height: 70px;
+  font-size: 10px;
+}
+
+#anger{
+  top: 13.5%;
+  left: 88.5%;
+  width: 70px;
+  height: 70px;
+  font-size: 10px;
+}
+
+#sad{
+  top: 25.5%;
+  left: 69.5%;
+  width: 70px;
+  height: 70px;
+  font-size: 10px;
+}
+
+#happy{
+  top: 25.5%;
+  left: 88.5%;
+  width: 70px;
+  height: 70px;
+  font-size: 10px;
+}
+
+#full{
+  top: 63.5%;
+  left: 78.5%;
+  width: 34.5%;
+  height: 59%;
+  font-size: 10px;
+}
