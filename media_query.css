@@ -1,0 +1,7 @@
+@media (max-width: 768px) {
+  #smile, #anger, #sad, #happy {
+    width: 12vw;
+    height: 12vw;
+    margin-top: 4vw;
+  }
+}
