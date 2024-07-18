@@ -28,12 +28,19 @@ body, html {
   max-width: 300px;
 }
 
-input[type="text"], input[type="number"]{
-  font-size: 10px;
+input[type="text"], input[type="number"], textarea{
+  font-size: 13px;
+  font-family: 'MS Gothic';
+  background-color: blanchedalmond;
 }
 
-input, textarea{
-  background-color: blanchedalmond;
+textarea{
+  resize: none;
+}
+
+canvas{
+  width: 2894px;
+  height: 4093px;
 }
 
 /*各項目設定*/
