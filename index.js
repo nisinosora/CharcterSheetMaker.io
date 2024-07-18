@@ -66,6 +66,37 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function createImage(){
+      const StanderdPos = {
+        "描いた人":{top:60.1, left:435},
+        "名前": {top:89.1, left:155},
+        "誕生日": {top:116.675, left:155},
+        "年齢": {top:144.962, left:84},
+        "性別": {top:144.962, left:226.5},
+        "出身": {top:172.538, left:84},
+        "種族": {top:172.538, left:226.5},
+        "身長": {top:200.113, left:84},
+        "体重": {top:200.113, left:226.5},
+        "髪色": {top:228.4, left:84},
+        "眼の色": {top:228.4, left:226.5},
+        "一人称": {top:256.688, left:84},
+        "二人称": {top:256.688, left:226.5},
+        "性格": {top:284.975, left:84},
+        "口調": {top:284.975, left:226.5},
+        "能力": {top:312.55, left:155},
+        "趣味・特技": {top:340.837, left:155},
+        "好きなもの": {top:369.125, left:155},
+        "嫌いなもの": {top:397.413, left:155},
+        "仲の良い人": {top:425.7, left:155},
+        "仲の悪い人": {top:453.987, left:155},
+        "家族構成": {top:481.562, left:155},
+        "その他情報": {top:590.463, left:155},
+        "smile": {top:95.4625, left:347.5},
+        "anger":{top:95.4625, left:442.5},
+        "sad": {top:180.312, left:347.5},
+        "happy": {top:180.312, left:442.5},
+        "full": {top:449.038, left:392.5}
+      }
+
       const offsetYs = {
         "名前": 0, //入力項目
         "誕生日": 30,
@@ -117,14 +148,13 @@ document.addEventListener("DOMContentLoaded", function () {
       // 背景画像をcanvasに描画
       ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
 
-
-
       // フォーム入力項目の取得と描画
       const inputs = document.querySelectorAll('input.overlap, textarea.overlap');
       inputs.forEach(input => {
           const { top, left, width } = window.getComputedStyle(input);
-          const x = parseFloat(left);
-          const y = parseFloat(top) + parseFloat(input.offsetHeight);
+          let placeholder = input.placeholder;
+          const x = parseFloat(StanderdPos[placeholder]["left"]);
+          const y = parseFloat(StanderdPos[placeholder]["top"]) + parseFloat(input.offsetHeight);
           ctx.font = '24.1px MS Gothic';
           ctx.fillStyle = 'black';
 
@@ -158,9 +188,9 @@ document.addEventListener("DOMContentLoaded", function () {
       // 画像ドロップゾーンの画像をcanvasに描画
       for (const [id, data] of Object.entries(imagesData)) {
           const dropZone = document.getElementById(id);
-          const { top, left, width, height } = window.getComputedStyle(dropZone);
-          const x = parseFloat(left);
-          const y = parseFloat(top);
+          const {width, height } = window.getComputedStyle(dropZone);
+          const x = parseFloat(StanderdPos[id]["left"]);
+          const y = parseFloat(StanderdPos[id]["top"]);
 
           const img = new Image();
           img.src = data.src;
