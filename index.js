@@ -247,11 +247,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if(input.tagName.toLowerCase() === 'textarea'){
           checkData = 782;
         }else if(input.classList.contains("frameshort")){
-          if(input.getAttribute("type") == "number"){
-            checkData = 17;
-          }else{
-            checkData = 3*(11 - input.placeholder.length)
-          }
+          checkData = 3*(11 - input.placeholder.length)
         }else{
           checkData = 60;
         }
